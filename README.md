@@ -2,7 +2,7 @@
 
 El proyecto es una simulación de un laberinto en 3D 
 
-Tecnologías usadas:
+# Tecnologías usadas:
 
   C++
   OpenGL
