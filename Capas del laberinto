@@ -1,0 +1,449 @@
+void Suelo()
+{
+    glPushMatrix();
+    glColor3f(0.0, 1.0, 0.5);
+    glTranslatef(0.0, -1.5, 0.0);
+    glScalef(80.0, -0.5, 80.0);
+    glutSolidCube(1.0);
+    glPopMatrix();
+}
+
+void Meta()
+{
+    glPushMatrix();
+    glColor3f(1.0, 0.0, 0.0);
+    glTranslatef(22.5, -1.4, -36.0);
+    glScalef(6.0, 1.0, 2.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+}
+
+void ParedE() //Paredes Exteriores
+{
+    //borde inferior
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(0.0, 0.3, 34.0);
+    glScalef(70.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //borde superior largo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-4.0, 0.3, -34.0);
+    glScalef(60.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //borde superior corto
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(27.0, 0.3, -34.0);
+    glScalef(5.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //borde derecho
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(27.0, 0.3, 0.0);
+    glScalef(4.5, 1.0, 86.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //borde izquierdo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-27.0, 0.3, -2.0);
+    glScalef(4.5, 1.0, 80.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+}
+
+void ParedI() //Paredes interiores
+{
+//Borde inferior
+    //1er Vertical pegado al borde inferior
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-12.0, 0.3, 30.0);
+    glScalef(3, 1.0, 12.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //2do Vertical pegado al borde inferior
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(11.0, 0.3, 32.0);
+    glScalef(3, 1.0, 7.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//borde superior
+    //1er Vertical pegado al borde superior
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-5.0, 0.3, -30.0);
+    glScalef(3, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //2do Vertical pegado al borde superior
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(2.0, 0.3, -30.0);
+    glScalef(3, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Borde derecho
+    //1er Horizontal pegado al borde derecho
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(22.0, 0.3, -29.5);
+    glScalef(12.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //2do Horizontal pegado al borde derecho
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(16.0, 0.3, -6.0);
+    glScalef(24.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //3er Horizontal pegado al borde derecho
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(20.0, 0.3, -2.0);
+    glScalef(12.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //4to Horizontal pegado al borde derecho
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(14.0, 0.3, 24.0);
+    glScalef(27.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Borde izquierdo
+    //1er Horizontal pegado al borde izquierdo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-19.0, 0.3, -29.5);
+    glScalef(15.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //2do Horizontal pegado al borde izquierdo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-20.0, 0.3, -4.0);
+    glScalef(12.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //3er Horizontal pegado al borde izquierdo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-17.3, 0.3, 0.0);
+    glScalef(19.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //4er Horizontal pegado al borde izquierdo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-21.7, 0.3, 29.0);
+    glScalef(8.0, 1.0, 1.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+}
+
+void ParedConexiones() //Conexiones con las paredes
+{
+//Conjunto 1
+    //abajo
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-21.0, 0.3, -20.0);
+    glScalef(2.5, 1.0, 24.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //-->
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-17.0, 0.3, -11.4);
+    glScalef(8.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //arriba
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-14.8, 0.3, -13.9);
+    glScalef(2.5, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 2
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-19.4, 0.3, 18.0);
+    glScalef(2.5, 1.0, 26.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-10.8, 0.3, 6.5);
+    glScalef(24.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-14.0, 0.3, 18.0);
+    glScalef(11.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//conjunto 3
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-10.5, 0.3, 24.0);
+    glScalef(7.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-6.7, 0.3, 26.0);
+    glScalef(2.5, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-0.9, 0.3, 29.0);
+    glScalef(17.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 4
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(4.2, 0.3, 20.0);
+    glScalef(2.5, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(17.0, 0.3, 27.0);
+    glScalef(2.5, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(19.0, 0.3, 29.0);
+    glScalef(7.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 5
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(20.0, 0.3, 8.0);
+    glScalef(2.5, 1.0, 26.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(16.2, 0.3, 17.2);
+    glScalef(7.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(12.0, 0.3, 13.0);
+    glScalef(7.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(14.4, 0.3, 15.0);
+    glScalef(2.5, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(9.0, 0.3, 15.0);
+    glScalef(2.5, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 6
+    //primera baja grande
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(14.0, 0.3, -24.4);
+    glScalef(2.5, 1.0, 12.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(7.0, 0.3, -24.0);
+    glScalef(2.0, 1.0, 13.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //centro
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(10.5, 0.3, -18.0);
+    glScalef(1.5, 1.0, 15.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    //horizontal
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(10.0, 0.3, -28.0);
+    glScalef(7.5, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(18.0, 0.3, -23.5);
+    glScalef(8.5, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(20.6, 0.3, -18.0);
+    glScalef(2.0, 1.0, 15.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(15.0, 0.3, -13.2);
+    glScalef(12.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(4.8, 0.3, -20.0);
+    glScalef(7.5, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 7
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-15.0, 0.3, -22.0);
+    glScalef(2.0, 1.0, 5.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-9.0, 0.3, -20.8);
+    glScalef(15.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-10.0, 0.3, -16.0);
+    glScalef(2.0, 1.0, 11.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-2.0, 0.3, -12.4);
+    glScalef(22.0, 1.0, 3.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(0.0, 0.3, -9.2);
+    glScalef(4.0, 1.0, 10.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 8
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-10.0, 0.3, -3.0);
+    glScalef(2.0, 1.0, 9.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-8.0, 0.3, -6.0);
+    glScalef(7.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+//Conjunto 9
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-5.0, 0.3, 12.0);
+    glScalef(24.0, 1.0, 2.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(-2.0, 0.3, 18.0);
+    glScalef(3.0, 1.0, 16.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(4.0, 0.3, 6.4);
+    glScalef(3.0, 1.0, 16.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(3.0, 0.3, 0.0);
+    glScalef(22.0, 1.0, 2.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(9.0, 0.3, 4.0);
+    glScalef(2.0, 1.0, 8.0);
+    glutSolidCube(0.8);
+    glPopMatrix();
+
+    glPushMatrix();
+    glColor3f(0.1, 0.0, 0.0);
+    glTranslatef(11.8, 0.3, 7.0);
+    glScalef(9.0, 1.0, 2.5);
+    glutSolidCube(0.8);
+    glPopMatrix();
+}
