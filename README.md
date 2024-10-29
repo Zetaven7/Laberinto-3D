@@ -4,6 +4,6 @@ El proyecto es una simulación de un laberinto en 3D
 
 # Tecnologías usadas:
 
-  C++
-  OpenGL
-  Visual Studio 2022
+  \tC++
+  \tOpenGL
+  \tVisual Studio 2022
